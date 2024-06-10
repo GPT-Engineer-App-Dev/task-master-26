@@ -3,6 +3,7 @@ import Index from "./pages/Index.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import { Box } from "@chakra-ui/react";
+import ConfettiPage from "./pages/ConfettiPage.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Box flex="1">
           <Routes>
             <Route exact path="/" element={<Index />} />
+            <Route path="/confetti" element={<ConfettiPage />} />
           </Routes>
         </Box>
         <Footer />
